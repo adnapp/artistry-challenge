@@ -1,0 +1,14 @@
+<h1> Edit</h1>
+
+
+<%= render 'form'%>
+
+
+<h3>Add Instrument</h3>
+
+<%=form_for @artist do |f|%>
+<%= f.collection_select :name, @instruments, :id, :name %>
+<%= f.submit%>
+
+<% end %>
+
